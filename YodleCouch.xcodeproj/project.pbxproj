@@ -14,6 +14,12 @@
 		A4CBE24B1B6025F4000310A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4CBE24A1B6025F4000310A6 /* Images.xcassets */; };
 		A4CBE24E1B6025F4000310A6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4CBE24C1B6025F4000310A6 /* LaunchScreen.xib */; };
 		A4CBE25A1B6025F5000310A6 /* YodleCouchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CBE2591B6025F5000310A6 /* YodleCouchTests.m */; };
+		A4CBE2651B602D14000310A6 /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CBE2641B602D14000310A6 /* CouchbaseLite.framework */; };
+		A4CBE2691B6039D7000310A6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CBE2681B6039D7000310A6 /* CFNetwork.framework */; };
+		A4CBE26B1B6039E8000310A6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CBE26A1B6039E8000310A6 /* Security.framework */; };
+		A4CBE26D1B6039F5000310A6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CBE26C1B6039F5000310A6 /* SystemConfiguration.framework */; };
+		A4CBE26F1B603A10000310A6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CBE26E1B603A10000310A6 /* libsqlite3.dylib */; };
+		A4CBE2711B603A2C000310A6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CBE2701B603A2C000310A6 /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,12 @@
 		A4CBE2531B6025F5000310A6 /* YodleCouchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YodleCouchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CBE2581B6025F5000310A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4CBE2591B6025F5000310A6 /* YodleCouchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YodleCouchTests.m; sourceTree = "<group>"; };
+		A4CBE2641B602D14000310A6 /* CouchbaseLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CouchbaseLite.framework; path = "../../Downloads/couchbase-lite-ios-enterprise_1.1.0-31/CouchbaseLite.framework"; sourceTree = "<group>"; };
+		A4CBE2681B6039D7000310A6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A4CBE26A1B6039E8000310A6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A4CBE26C1B6039F5000310A6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A4CBE26E1B603A10000310A6 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		A4CBE2701B603A2C000310A6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4CBE2711B603A2C000310A6 /* libz.dylib in Frameworks */,
+				A4CBE26F1B603A10000310A6 /* libsqlite3.dylib in Frameworks */,
+				A4CBE26D1B6039F5000310A6 /* SystemConfiguration.framework in Frameworks */,
+				A4CBE26B1B6039E8000310A6 /* Security.framework in Frameworks */,
+				A4CBE2691B6039D7000310A6 /* CFNetwork.framework in Frameworks */,
+				A4CBE2651B602D14000310A6 /* CouchbaseLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +84,7 @@
 				A4CBE23C1B6025F4000310A6 /* YodleCouch */,
 				A4CBE2561B6025F5000310A6 /* YodleCouchTests */,
 				A4CBE23B1B6025F4000310A6 /* Products */,
+				A4CBE2631B602C60000310A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +136,19 @@
 				A4CBE2581B6025F5000310A6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A4CBE2631B602C60000310A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4CBE2701B603A2C000310A6 /* libz.dylib */,
+				A4CBE26E1B603A10000310A6 /* libsqlite3.dylib */,
+				A4CBE26C1B6039F5000310A6 /* SystemConfiguration.framework */,
+				A4CBE26A1B6039E8000310A6 /* Security.framework */,
+				A4CBE2681B6039D7000310A6 /* CFNetwork.framework */,
+				A4CBE2641B602D14000310A6 /* CouchbaseLite.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,8 +381,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/johnschindler/Downloads/couchbase-lite-ios-enterprise_1.1.0-31",
+				);
 				INFOPLIST_FILE = YodleCouch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -359,8 +396,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/johnschindler/Downloads/couchbase-lite-ios-enterprise_1.1.0-31",
+				);
 				INFOPLIST_FILE = YodleCouch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
